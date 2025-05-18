@@ -19,7 +19,7 @@ body {
   background-color: #0f1821;
   color: #fff;
   border-bottom: 10px solid #66cccc;
-  padding: 10px 20px;
+  padding: 15px 20px;
   box-shadow: black 1px 1px 5px;
 }
 
@@ -45,7 +45,7 @@ body {
 
 .nav-left li:hover {
   border-bottom: 4px solid #66cccc;
-  transition: 0.01s;
+  transition: 0.s;
 }
 
 .nav-left li a,
@@ -84,4 +84,45 @@ body {
 
 .btn-entrar:hover {
   background-color: #055a89;
+}
+.footer-container{
+  background-color: #0f1821;
+  color: #fff;
+  border-top: 10px solid #66cccc;
+  padding: 15px 20px;
+  box-shadow: black 1px 0px 5px;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.footer-content ul{
+  display: flex;
+  gap: 100px;
+  list-style: none;
+}
+/* Aplica layout flex em toda a página */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Faz o conteúdo expandir para empurrar o footer */
+main {
+  flex: 1;
+}
+
+/* Footer normal, mas sempre no final da página */
+footer {
+  background-color: #0d1d2e;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }

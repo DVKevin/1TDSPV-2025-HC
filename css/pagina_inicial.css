@@ -1,0 +1,36 @@
+.hero-container{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  height: 100px;
+
+}
+
+.hero-label {
+    display: flex;
+    width: 500px;
+    background-color: #1b1f23;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    border: #0a74da 2px solid;
+    
+  }
+  
+  .hero-label img {
+    width: 176px;
+    height: 100px;
+  }
+  
+  .hero-label div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-name {
+    font-weight: 700;
+  }
