@@ -126,3 +126,21 @@ footer {
   padding: 20px;
   text-align: center;
 }
+.footer-content li{
+
+}
+.footer-content li:hover{
+  color: #66cccc;
+  transition: 0.01s;
+  border-bottom: 4px solid #66cccc;
+  transition: 0.01s;
+}
+.footer-container li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-container li a:hover{
+  color: #66cccc;
+  transition: 0.1s;
+}

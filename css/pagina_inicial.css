@@ -1,36 +1,49 @@
-.hero-container{
+header{
     display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
-  height: 100px;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    height: 300px;
+}
+#title{
+    text-align: center;
+    color: #0a74da;  
 }
 
-.hero-label {
-    display: flex;
-    width: 500px;
-    background-color: #1b1f23;
-    color: #fff;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-    border: #0a74da 2px solid;
-    
-  }
+section.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: #add8f5;
+  padding: 40px;
+  box-shadow: black 1px 1px 5px;
   
-  .hero-label img {
-    width: 176px;
-    height: 100px;
-  }
   
-  .hero-label div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
+
+.card {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 250px;
+  flex: 1 1 250px;
   
-  .hero-name {
-    font-weight: 700;
-  }
+}
+.card img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.card h2 {
+  color: #1b1f23;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #1b1f23;
+  font-size: 14px;
+}
