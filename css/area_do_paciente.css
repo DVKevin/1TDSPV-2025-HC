@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.appointments {
+  flex: 1;
+  min-width: 280px;
+}
+
+.appointment {
+  margin-bottom: 20px;
+}
+
+.appointment strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.appointment p {
+  color: #888;
+  margin: 0;
+}
+
+.calendar {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.calendar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
