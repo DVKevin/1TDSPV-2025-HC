@@ -26,10 +26,39 @@
             </ul>
         </div>
     </nav>
-    <main class="main-content">
-      <h1>Bem-vindo à página de agendamentos</h1>
-      <p>Este é um exemplo de conteúdo que pode ser curto ou longo.</p>
-    </main>
+<header class="header">
+  <div class="header-container">
+    <div class="header-text">
+      <h1>Agende sua consulta</h1>
+      <p>
+        Escolha a especialidade, a data e o horário disponíveis para ser atendido de forma simples e rápida.
+      </p>
+    </div>
+    <div class="header-image">
+      <img src="img/04-perfil.webp" alt="Paciente sorrindo">
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="form-section">
+    <h2>Insira seus dados</h2>
+    <form class="appointment-form">
+      <div class="form-row">
+        <input type="text" placeholder="Nome" required>
+        <input type="text" placeholder="Sobrenome" required>
+      </div>
+      <input type="text" placeholder="Data de nascimento" required>
+      <input type="text" placeholder="Número do cartão SUS" required>
+      <input type="text" placeholder="Especialidade desejada" required>
+      <input type="text" placeholder="Tipo de consulta (Presencial / remoto)" required>
+      <input type="text" placeholder="Data e horário preferido" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Observações adicionais"></textarea>
+      <button type="submit">Agendar Consulta</button>
+    </form>
+  </section>
+</main>
     <footer class="footer-container">
         <div class="footer-content">
             <ul>
