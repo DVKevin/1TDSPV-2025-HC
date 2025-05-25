@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  background-color: #f5f0ea;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding: 40px 60px 0;
+}
+
+.main {
+  padding: 20px 60px;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  min-width: 300px;
+  margin-top: 8px;
+}
+
+.contact-info a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.map img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
