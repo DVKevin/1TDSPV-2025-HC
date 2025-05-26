@@ -11,10 +11,12 @@ body {
   background-color: #eee8e0;
 }
 
+/* Link da página atual */
 #pagina-selecionada a {
   color: #66cccc;
 }
 
+/* NAVBAR */
 .nav-container {
   background-color: #0f1821;
   color: #fff;
@@ -29,6 +31,7 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .nav-left,
@@ -36,6 +39,7 @@ body {
   display: flex;
   gap: 15px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-left li,
@@ -45,7 +49,7 @@ body {
 
 .nav-left li:hover {
   border-bottom: 4px solid #66cccc;
-  transition: 0.s;
+  transition: 0.2s;
 }
 
 .nav-left li a,
@@ -85,62 +89,138 @@ body {
 .btn-entrar:hover {
   background-color: #055a89;
 }
-.footer-container{
+
+/* FOOTER */
+.footer-container {
   background-color: #0f1821;
   color: #fff;
   border-top: 10px solid #66cccc;
   padding: 15px 20px;
   box-shadow: black 1px 0px 5px;
 }
-.footer-content{
+
+.footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.footer-content ul{
+
+.footer-content ul {
   display: flex;
   gap: 100px;
   list-style: none;
+  flex-wrap: wrap;
 }
-/* Aplica layout flex em toda a página */
+
+.footer-content li:hover {
+  color: #66cccc;
+  border-bottom: 4px solid #66cccc;
+  transition: 0.1s;
+}
+
+.footer-container li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-container li a:hover {
+  color: #66cccc;
+  transition: 0.1s;
+}
+
+/* Expande o conteúdo e fixa o footer no fim */
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
 }
 
-/* Faz o conteúdo expandir para empurrar o footer */
 main {
   flex: 1;
 }
 
-/* Footer normal, mas sempre no final da página */
 footer {
   background-color: #0d1d2e;
   color: white;
   padding: 20px;
   text-align: center;
 }
-.footer-content li{
 
+/* ========== RESPONSIVIDADE POR TAMANHO DE TELA ========== */
+
+/* Extra small devices (até 600px) */
+@media (max-width: 600px) {
+  .nav-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-content ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
-.footer-content li:hover{
-  color: #66cccc;
-  transition: 0.01s;
-  border-bottom: 4px solid #66cccc;
-  transition: 0.01s;
+
+/* Small devices (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .nav-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-content ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
-.footer-container li a{
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+
+/* Medium devices (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-left,
+  .nav-right {
+    gap: 10px;
+  }
+
+  .footer-content ul {
+    gap: 60px;
+  }
 }
-.footer-container li a:hover{
-  color: #66cccc;
-  transition: 0.1s;
+
+/* Large devices (992px - 1299px) */
+@media (min-width: 992px) and (max-width: 1299px) {
+  .footer-content ul {
+    gap: 80px;
+  }
+}
+
+/* Extra large devices (1300px ou mais) */
+@media (min-width: 1300px) {
+  .footer-content ul {
+    gap: 100px;
+  }
 }
