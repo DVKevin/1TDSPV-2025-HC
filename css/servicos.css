@@ -49,10 +49,59 @@
   color: #555;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
+/* ========== RESPONSIVIDADE ========== */
+
+/* Extra-small devices (até 600px) */
+@media (max-width: 600px) {
   .services-cards {
     flex-direction: column;
     align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .services-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* Medium devices (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+/* Large devices (992px - 1299px) */
+@media (min-width: 992px) and (max-width: 1299px) {
+  .card {
+    flex: 1 1 30%;
+  }
+}
+
+/* Extra-large devices (1300px ou mais) */
+@media (min-width: 1300px) {
+  .card {
+    flex: 1 1 25%;
   }
 }
