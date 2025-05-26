@@ -41,3 +41,44 @@ main section p {
   line-height: 1.6;
   color: #4d4d4d;
 }
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Dispositivos pequenos (até 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+    border-radius: 0.8rem;
+  }
+
+  main section h2 {
+    font-size: 1.1rem;
+  }
+
+  main section p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Dispositivos médios (601px - 991px) */
+@media (min-width: 601px) and (max-width: 991px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 2rem 1.5rem;
+  }
+
+  main section h2 {
+    font-size: 1.15rem;
+  }
+}
