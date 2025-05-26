@@ -63,15 +63,82 @@
   border-radius: 10px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
+/* ======================== RESPONSIVIDADE ======================== */
+
+/* Extra Small devices (phones, até 600px) */
+@media (max-width: 600px) {
   .section-content {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
+  }
+
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.9rem;
   }
 
   .btn {
     display: inline-block;
     margin: 0 auto;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small devices (600px a 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .header-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+  }
+
+  .section-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+}
+
+/* Medium devices (768px a 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-section p {
+    font-size: 1.05rem;
+  }
+
+  .section-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* Large devices (992px a 1299px) */
+@media (min-width: 992px) and (max-width: 1299px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .text-section p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra Large devices (1300px ou mais) */
+@media (min-width: 1300px) {
+  .header-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .text-section p {
+    font-size: 1.2rem;
   }
 }
