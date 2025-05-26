@@ -36,3 +36,65 @@ body {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
+/* ==================== RESPONSIVIDADE ==================== */
+
+/* Telas pequenas (até 600px) */
+@media (max-width: 600px) {
+  .header {
+    padding: 20px 20px 0;
+    text-align: center;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+
+/* Telas médias (601px - 991px) */
+@media (min-width: 601px) and (max-width: 991px) {
+  .header {
+    padding: 30px 40px 0;
+    text-align: center;
+  }
+
+  .main {
+    padding: 20px 40px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+}
+
+/* Telas grandes (992px ou mais) */
+@media (min-width: 992px) {
+  .header {
+    text-align: left;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    text-align: left;
+  }
+}
